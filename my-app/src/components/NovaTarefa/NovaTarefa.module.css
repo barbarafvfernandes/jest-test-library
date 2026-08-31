@@ -1,0 +1,116 @@
+.form {
+  margin: 34px 0 42px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.formRow {
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  min-width: 0;
+  flex: 1;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  border-radius: 2px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+
+.form input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.form button {
+  min-height: 48px;
+  border: 0;
+  padding: 0 20px;
+  border-radius: 2px;
+  color: #fff;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #b84b32;
+}
+
+.form button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.errorMessage{
+  color: #dc3545;
+  font-size: 1rem; 
+  margin-top: 0.5rem; 
+  font-weight: 500; 
+  display: block; 
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.listHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.listHeader h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.count {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.taskList {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 56px;
+  border-top: 1px solid var(--line);
+  font-size: 16px;
+}
+
+.check {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  place-items: center;
+  border: 1px solid #9db09e;
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  .formRow {
+    flex-direction: column;
+  }
+}
