@@ -20,9 +20,10 @@ Na suíte atual de testes, são exercitados:
 
 ## Tecnologias
 
-- Next.js 16 e React 19;
+- Next.js: 16.3.5;
+- React: 19.2.8;
 - TypeScript;
-- Jest 30;
+- Jest 30.4.2;
 - Jest DOM (`@testing-library/jest-dom`);
 - Testing Library para React (`@testing-library/react`);
 - Testing Library User Event (`@testing-library/user-event`);
